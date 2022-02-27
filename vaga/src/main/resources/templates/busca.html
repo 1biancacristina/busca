@@ -1,0 +1,41 @@
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+<style>
+body{
+background: grey}
+
+h1,p,span{
+font-family:Arial}
+
+p,span{
+font-size: 20px}
+
+span{
+font-style:italic}
+
+input:focus{
+  background:silver;
+}
+
+.bt{
+  font-size:1em;
+  font-size: 1em;
+  background: darkmagenta;
+  border: 0;
+  margin-bottom: 1em;
+  color: #ffffff;
+  padding:0.2em 0.6em;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+</style></head>
+<body>
+<div class="form_busca"><h1>Buscar</h1>
+<form method="post">
+<input type="text" value="" name="buscar">
+<input type="submit" value="OK" class="bt"> <br> <br>
+<p>Resultado da busca: <span th:text="${valor}"></span>
+</form>
+</div>
+</body>
+</html>   
